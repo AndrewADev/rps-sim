@@ -1,4 +1,3 @@
-# from pytest_mock import mocker
 from rps.player import BotPlayer
 from rps.strategy import RandomPlayStrategy
 
