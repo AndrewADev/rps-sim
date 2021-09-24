@@ -5,6 +5,14 @@ class PlayResult(IntEnum):
   DRAW = 0
   WIN = 1
 
+def human_readable(result):
+  if result == PlayResult.WIN:
+    return "wins"
+  elif result == PlayResult.LOSS:
+    return "loses"
+  elif result == PlayResult.DRAW:
+    return "draws"
+
 class Play(IntEnum):
   ROCK = 1
   PAPER = 2
