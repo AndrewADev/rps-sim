@@ -1,4 +1,3 @@
-from warnings import resetwarnings
 from rps.player import BotPlayer
 from rps.play import human_readable
 from rps.strategy import RandomPlayStrategy

@@ -1,6 +1,3 @@
-from .play import PlayResult
-
-
 def play_game(firstPlayer, secondPlayer):
     firstPlay = firstPlayer.play()
     secondPlay = secondPlayer.play()
