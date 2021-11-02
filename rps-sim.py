@@ -14,6 +14,4 @@ for result in results:
     print("Result: Player 1...", human_readable(result))
 
 
-print ("Simulation finished.")
-
-
+print("Simulation finished.")
