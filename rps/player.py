@@ -1,4 +1,5 @@
 import abc
+from .strategy import PlaySelectionStrategy
 
 
 class Player(object):
@@ -12,4 +13,4 @@ class BotPlayer(Player):
         self.__strategy = play_strategy
 
     def play(self):
-        return self.__strategy.play(self)
+        return self.__strategy.play()
