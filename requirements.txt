@@ -15,7 +15,7 @@ py==1.11.0
 pyparsing==3.0.5
 pytest==6.2.5
 pytest-mock==3.6.1
-regex==2021.8.28
+regex==2021.11.10
 six==1.16.0
 toml==0.10.2
 tomli==1.2.2
