@@ -18,7 +18,7 @@ pytest-mock==3.6.1
 regex==2021.11.10
 six==1.16.0
 toml==0.10.2
-tomli==1.2.2
+tomli==2.0.1
 typing-extensions==3.10.0.2
 wcwidth==0.2.5
 zipp==3.6.0
