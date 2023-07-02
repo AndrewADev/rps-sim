@@ -19,6 +19,6 @@ regex==2021.11.10
 six==1.16.0
 toml==0.10.2
 tomli==1.2.2
-typing-extensions==3.10.0.2
+typing-extensions==4.7.1
 wcwidth==0.2.5
 zipp==3.6.0
