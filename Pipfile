@@ -4,21 +4,21 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-black = "*"
 click = "*"
 colorama = "*"
 iniconfig = "*"
-mypy-extensions = "*"
 packaging = "*"
 pathspec = "*"
 platformdirs = "*"
 pluggy = "*"
-pytest = "*"
-pytest-mock = "*"
 tomli = "*"
 typing-extensions = "*"
 
 [dev-packages]
+black = "*"
+pytest = "*"
+pytest-mock = "*"
+mypy-extensions = "*"
 
 [requires]
 python_version = "3.10"
