@@ -27,6 +27,9 @@ jobs:
     - name: Check formatting
       run: pipenv run black --target-version=py310 .
 
+    - name: Check types
+      run: pipenv run mypy rps rps-sim.py
+
     - name: Run tests
       run: |
         pipenv run pytest

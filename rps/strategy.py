@@ -7,10 +7,10 @@ class PlaySelectionStrategy(object):
     __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
-    def play(self):
+    def play(self) -> Play:
         """Required method"""
 
 
 class RandomPlayStrategy(PlaySelectionStrategy):
-    def play(self):
+    def play(self) -> Play:
         return Play(randrange(Play.min(), Play.max() + 1))

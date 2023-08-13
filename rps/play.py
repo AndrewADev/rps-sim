@@ -1,3 +1,4 @@
+from __future__ import annotations
 from enum import IntEnum
 
 
@@ -7,7 +8,7 @@ class PlayResult(IntEnum):
     WIN = 1
 
 
-def human_readable(result):
+def human_readable(result: PlayResult) -> str:
     if result == PlayResult.WIN:
         return "wins"
     elif result == PlayResult.LOSS:
@@ -21,7 +22,7 @@ class Play(IntEnum):
     PAPER = 2
     SCISSORS = 3
 
-    def match(self, other):
+    def match(self, other: Play) -> PlayResult:
         if self.value == other.value or type(other) is not Play:
             return PlayResult.DRAW
         if self.value == self.ROCK:
@@ -30,11 +31,12 @@ class Play(IntEnum):
             return PlayResult.WIN if other.value == self.PAPER else PlayResult.LOSS
         elif self.value == self.PAPER:
             return PlayResult.WIN if other.value == self.ROCK else PlayResult.LOSS
+        return PlayResult.DRAW
 
     @staticmethod
-    def min():
+    def min() -> int:
         return min([Play.ROCK, Play.PAPER, Play.SCISSORS])
 
     @staticmethod
-    def max():
+    def max() -> int:
         return max([Play.ROCK, Play.PAPER, Play.SCISSORS])
