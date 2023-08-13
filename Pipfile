@@ -4,30 +4,19 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-atomicwrites = "*"
-attrs = "*"
 black = "*"
 click = "*"
 colorama = "*"
-importlib-metadata = "*"
 iniconfig = "*"
-more-itertools = "*"
 mypy-extensions = "*"
 packaging = "*"
 pathspec = "*"
 platformdirs = "*"
 pluggy = "*"
-py = "*"
-pyparsing = "*"
 pytest = "*"
 pytest-mock = "*"
-regex = "*"
-six = "*"
-toml = "*"
 tomli = "*"
 typing-extensions = "*"
-wcwidth = "*"
-zipp = "*"
 
 [dev-packages]
 
