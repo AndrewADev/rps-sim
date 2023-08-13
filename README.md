@@ -39,6 +39,12 @@ Once installed, you should be able to run it with:
 $ python ./rps-sim.py
 ```
 
+You can specify the number of games that should be played via the `--games` argument, e.g.:
+```shell
+$ python ./rps-sim.py --games 7
+```
+Run `python ./rps-sim.py --help` for a complete list of options
+
 ## Tests
 
 Assuming you have an active `pipenv` shell: 
