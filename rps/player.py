@@ -17,5 +17,5 @@ class BotPlayer(Player):
         self.__strategy = play_strategy
         self.name = name
 
-    def play(self)  -> Play:
+    def play(self) -> Play:
         return self.__strategy.play()
