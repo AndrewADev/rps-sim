@@ -129,6 +129,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-# Presently ignoring, as only contains a non-portable path
-.vscode/
