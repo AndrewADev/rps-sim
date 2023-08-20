@@ -1,6 +1,6 @@
 # RPS Sim
 
-A small console program that 'simulates' games of rock paper scissors.
+A small console program that simulates games of rock paper scissors.
 
 ## Installing
 
@@ -39,10 +39,16 @@ Once installed, you should be able to run it with:
 $ python ./rps-sim.py
 ```
 
-You can specify the number of games that should be played via the `--games` argument, e.g.:
+You can specify the number of games that should be played via the `--games` option, e.g.:
 ```shell
 $ python ./rps-sim.py --games 7
 ```
+
+You can specify the strategy that a player will use via the `--p1-strategy`/`--p2-strategy` option, e.g.:
+```shell
+$ python ./rps-sim.py --p1-strategy 'sequence'
+```
+
 Run `python ./rps-sim.py --help` for a complete list of options
 
 ## Tests
