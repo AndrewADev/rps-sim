@@ -1,17 +1,22 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     ":automergeLinters",
     ":automergeTesters",
     ":automergeRequireAllStatusChecks"
   ],
-  "python": {
-    "lockFileMaintenance": {
-      "enabled": true,
-      "schedule": [
-        "before 4am on saturday"
+  "packageRules": [
+    {
+      "matchCategories": [
+        "python"
       ],
-      "groupName": "Resolved Python dependencies"
+      "lockFileMaintenance": {
+        "enabled": true,
+        "schedule": [
+          "before 4am on saturday"
+        ],
+        "groupName": "Resolved Python dependencies"
+      }
     }
-  }
+  ]
 }
