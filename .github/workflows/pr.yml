@@ -25,7 +25,7 @@ jobs:
         pipenv install --dev
       
     - name: Check formatting
-      run: pipenv run black --target-version=py311 .
+      run: pipenv run black --target-version=py313 .
 
     - name: Check types
       run: pipenv run mypy rps rps-sim.py
